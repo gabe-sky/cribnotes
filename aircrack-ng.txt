@@ -1,0 +1,55 @@
+# Overview
+
+aircrack-ng is the next generation blah blah blah
+
+# Finding and Capturing Traffic
+
+## Put card in monitor mode on a particular channel
+
+  airmon-ng start wlan0 1
+
+## Injection test
+
+https://www.aircrack-ng.org/doku.php?id=injection_test
+
+  aireplay-ng --test wlan0mon  # finds SSIDs and things
+
+## for() loop to change channels, test, move on
+
+  for i in {1..11} ; do airmon-ng start wlan0mon $i ; figlet "${i}" ; aireplay-ng --test wlan0mon ; done
+
+For signal, smaller negative numbers are better, bigger than -65 is bad.
+(https://community.cisco.com/t5/small-business-support-documents/why-is-almost-everything-negative-in-wireless/ta-p/3159743)
+
+## Snoop only initialization vectors, from all channels, but only associated devices
+
+  airdump-ng -t WPA2 -i -a -w <file prefix> wlan0mon
+
+## Deauth a connected client (to try to see it re-initialize) on the secondary wifi
+
+  airmon-ng start wlan1 <target channel>
+  aireplay-ng -0 1 -a <AP MAC> -c <client MAC> wlan1mon
+    # 0 = deauth, 1 = once
+
+## Snoop some particular wireless network
+
+  airodump-ng -c <channel> -d <AP MAC> -w <file prefix> wlan0mon
+
+# WPA Cracking
+
+## Run a password file against some AP MAC in some captures
+
+  aircrack-ng -w password.lst -b <AP MAC> <file prefix>*.ivs
+
+# Use ivs tools to merge a bunch of iv files into one
+
+  ivstools --merge pcaps/Flarghies-* pcaps/Flarghies.ivs
+
+# Uodate aircrack's list of MAC addresses, then grep for a prefix, to find the manufacturer
+  airodump-ng-oui-update
+  grep -A 5 -i XX-XX-XX /usr/share/ieee-data/oui.txt)
+
+
+# Links
+
+* Wireshark OUI Lookup: https://www.wireshark.org/tools/oui-lookup.html

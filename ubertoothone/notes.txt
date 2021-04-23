@@ -1,0 +1,47 @@
+git clone https://github.com/greatscottgadgets/ubertooth.git
+
+cd ubertooth/host/python/specan_ui
+
+
+sudo apt-get install libusb
+sudo apt-get install pip
+sudo pip install PyUSB
+sudo pip install Qt # big errors
+sudo pip install PySide # something broken
+sudo pip install Numpy
+sudo apt-get install libusb-dev
+
+https://wiki.elvis.science/index.php?title=Bluetooth_Sniffing_with_Ubertooth:_A_Step-by-step_guide
+
+sudo apt-get install cmake libusb-1.0-0-dev make gcc g++ libbluetooth-dev pkg-config python3-numpy python3-qtpy
+
+pip install pyside3
+
+Okay now starting from github
+
+Get the tools and follow the readme
+https://github.com/greatscottgadgets/ubertooth/wiki/Build-Guide
+
+Update the firmware
+https://github.com/greatscottgadgets/ubertooth/wiki/Firmware
+Might give you a libUSB error 
+  libUSB Error: Input/Output Error:  (-1)
+troubleshooting says to rebuid the firmware from source
+
+Oh look I am fetching an arm gcc cross-compiler
+https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
+
+
+Cool looking spectrume analyzer UI
+ubertooth-specan-ui
+
+Intercept Lower Address Port (LAP) packets
+ubertooth-rx
+
+Show all devices on USB, in case you need tgus for debugging or something
+lsusb
+
+hcitool does not work with ubertooth, you have to use ubertooth-btle or ubertooth-scan
+
+capture some LE pacakets and write to a pcap file
+ubertooth-btle -n -r bluetooth.pcap

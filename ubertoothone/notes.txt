@@ -31,6 +31,7 @@ troubleshooting says to rebuid the firmware from source
 Oh look I am fetching an arm gcc cross-compiler
 https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
 
+https://www.wireshark.org/tools/oui-lookup.html
 
 Cool looking spectrume analyzer UI
 ubertooth-specan-ui
@@ -41,7 +42,23 @@ ubertooth-rx
 Show all devices on USB, in case you need tgus for debugging or something
 lsusb
 
-hcitool does not work with ubertooth, you have to use ubertooth-btle or ubertooth-scan
+hcitool does not work with ubertooth, you have to use ubertooth-btle
 
 capture some LE pacakets and write to a pcap file
-ubertooth-btle -n -r bluetooth.pcap
+ubertooth-btle -f -r bluetooth.pcap
+
+make it work with wireshark
+mkfifo /tmp/btle
+ubertooth-btle -f -c /tmp/btle
+wireshark > captture > options
+manage interfaces
+pipes
++
+/tmp/btle
+
+crackle
+git clone https://github.com/mikeryan/crackle.git
+cd crackle
+make
+sudo make install
+crackle -i someppcap.pcap

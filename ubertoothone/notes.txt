@@ -1,3 +1,16 @@
+# make it work with wireshark
+mkfifo /tmp/btle
+ubertooth-btle -f -c /tmp/btle
+wireshark > captture > options
+manage interfaces
+pipes
++
+/tmp/btle
+
+
+
+
+
 git clone https://github.com/greatscottgadgets/ubertooth.git
 
 cd ubertooth/host/python/specan_ui
@@ -62,3 +75,6 @@ cd crackle
 make
 sudo make install
 crackle -i someppcap.pcap
+
+
+dongle stuff

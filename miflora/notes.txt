@@ -1,0 +1,26 @@
+https://pypi.org/project/miflora/
+
+pip3 install bluepy
+
+Linux dpes not approve of my little dongle
+failed to load brcm/BCM20702B0-19ff-0239.hcd
+https://github.com/winterheart/broadcom-bt-firmware
+Eindows update has it in a cab
+download and extract ttge right onw
+
+
+https://github.com/winterheart/broadcom-bt-firmware/blob/master/brcm/BCM20702B0-19ff-0239.hcd
+
+#show all hci devices availabe
+hciconfig -a
+
+# activate one
+sudo hciconfig hci1 up
+
+
+# see what's out there
+hcitool -i hci1 scan  # apparentky don't need tge -i if it's the only one powered up
+
+sudo hcitool cc 00:7C:2D:C5:EA:EF  # try to connect to a device
+
+no idea, aftre htat.  I don't think this dongle does BTLE or naybe the miflora is sleepy

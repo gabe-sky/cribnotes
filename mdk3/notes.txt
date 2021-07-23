@@ -1,0 +1,3 @@
+Beacon flood
+
+sudo mdk3 wlan1 b -f /usr/share/doc/mdk3/fakeap-example.txt

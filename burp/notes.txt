@@ -1,0 +1,19 @@
+Proxy configuration in Firefox:
+  * General > Network Settings (bottom) > Manual > 127.0.0.1:8080 > Use for all
+  * Download the CA certificate from http://burpsuite
+  * Privacy and Security > Certificates (bottom) > View Certificates
+    Authorities > Import
+
+Switch off intercept to just passively collect:
+  Proxy > Intercept > Intercept is on
+
+Embedded browser:
+  Proxy > Intercept > Open Browser
+
+
+Limit your scope:
+  Target > Scope
+    Only items in the include list are considered in scope.
+    The exclusion list is applied next, to see if we should ignore this
+    Which is to say, the exclusion list is the subset of the scope to skip
+  Or right-click on things in Target > Site Map

@@ -1,0 +1,10 @@
+Proxy
+  Tools > Options > Dynamic SSL Certificate > Generate (and save it)
+  Firefox:  Preferences > Privacy and Security > Certificates > View Certificates
+
+Limit scope
+  Right click the target > Include in Context > Default Context
+
+Let's go
+  Right click the target > Attack > Spider
+  Right click the target > Attack > Active Scan (grab a book, it'll be a while)

@@ -1,3 +1,12 @@
 intitle:string
-site:url
+allintitle: string string string (all strings in the title)
+site:fqdn
 filetype:extension
+cache:fqdn (returns a cached version)
+allinurl:string string string (all strings must be in the URL)
+inurl:string string string (one or more must be in the URL)
+inanchor:string
+link:url (has a link to)
+related:url (is "related" not really sure what that is)
+info:url (data about the url, maybe?  hmm)
+location:string (limit to just some physical location)

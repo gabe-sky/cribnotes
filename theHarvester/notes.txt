@@ -1,0 +1,3 @@
+
+# harvest the domain/company blahblah with max 200 results via linkedin
+theHarvester -d blahblah -l 200 -b linkedin

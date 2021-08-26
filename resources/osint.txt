@@ -1,0 +1,22 @@
+
+people or organizations:
+  facebook
+  instagram
+  youtube
+  linkedin
+  twitter
+
+
+footprint:
+  netcraft.com > resources > site report
+  https://www.searchftps.net/
+
+social media:
+  theHarvester: can search multiple osint sources e.g. linkedin, twitter
+  sherlock
+  social-searcher.com
+  userrecon
+
+tools:
+  youtube data viewer: citizenevidence.amnestyusa.org
+  reverse image search: https://tineye.com

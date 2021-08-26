@@ -1,0 +1,1 @@
+nikto --host victim.local --port 443 --vhost use.host.header.com

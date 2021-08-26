@@ -1,0 +1,12 @@
+
+
+Policies
+Create a new policy
+Advanced Scan
+
+
+My Scans
+Create a new scan
+User defined
+Whatever policy you created
+After saving it you have to launch it

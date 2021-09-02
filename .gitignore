@@ -1,3 +1,4 @@
 *.ivs
 *.pcap
+*.kismet
 .DS_Store

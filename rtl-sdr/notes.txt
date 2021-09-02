@@ -1,0 +1,17 @@
+
+
+sudo echo > /etc/modprobe.d/blacklist-dvb.conf <<EOF
+# Don't let snuggles load the wrong driver
+blacklist dvb_usb_rtl28xxu
+EOF
+
+# grab some files
+sudo apt-get install rtl-sdr
+
+# did it workk?  (ignore the E4000 thing)
+rtl_test -t
+
+Looking over this quick-start guide for the rtl-sdr: https://ranous.files.wordpress.com/2018/02/rtl-sdr4linux_quickstartv2-18.pdf
+
+Go get Gqrx: https://gqrx.dk/download
+Never mind.  `sudo apt-get gqrx-sdr`

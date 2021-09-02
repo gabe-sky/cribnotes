@@ -1,0 +1,11 @@
+https://www.kismetwireless.net/
+
+add myself to kismet group logout andn login
+
+don't put wlan 1 into onitor mode
+
+uodate /etc/kismet/kismet.conf
+  source=wlan1
+
+`kismet`
+

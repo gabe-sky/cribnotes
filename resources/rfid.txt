@@ -1,0 +1,14 @@
+
+
+Schlage IBF iButton
+  (Low frequency)
+
+HID iClass SE  (High-frequency) (Picopass)
+
+
+https://github.com/Proxmark/proxmark3
+And tons of useful documents in here: http://www.proxmark.org/files/
+
+
+
+https://github.com/RfidResearchGroup/ChameleonMini/tree/proxgrind

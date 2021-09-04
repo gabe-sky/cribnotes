@@ -1,0 +1,9 @@
+ls /dev/tty.*
+
+screen /dev/tty.usbmodem14201  # or wherever it enumerated into
+
+Control-a d   # detatch the screen session (which leaves it still active)
+
+screen -r   # to reattach
+
+Great, I'm going to need a real terminal emulator, aren't I?

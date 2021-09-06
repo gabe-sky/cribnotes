@@ -1,0 +1,43 @@
+# How are we feeling today?
+
+hw status
+hw tune    # Does not actually "tune" anything -- despite what blogs say
+
+#
+# T5577 HID-format card/keyfob
+#
+# Quick look at what's sitting on the low frequency antenna.  Don't worry if
+# it says unknown modulation, just as long as it says it found a T55xx
+
+lf search
+
+# Now that you know the facility code and card number you can clone that onto
+# another keyfob or card.
+
+lf hid clone --fc 420 --cn 666 --wiegand H10301
+
+
+# Stupid blue cloner of doom set a password.  Almost all set it to 51243648.
+
+lf t55xx chk
+
+# And the blue devil set it read-only.  Let's read block 0 so we can flip a bit.
+
+lf t55xx read -b 0 -p <PASSWORD>
+
+# You'll see something like: 00000000000100000111000001110000 as the binary data
+# If the hex value is 00107070 you're in luck.  Flipping that bit makes 00107060
+# Or, you'll need to flip the twenty-eight bit.  Which is the fifth to last.
+# E.g. in this example it's that '1' that's followed by four zeroes.
+
+
+# Copy and paste it into a binary-to-hex converter.  Flip that bit.  Covert to
+# hex.  Now write it back onto the fob.
+
+lf t55xx write -b 0 -d 00107060 <PASSWORD>
+
+# If you want to wipe a card/keyfob that has a password, you need to specify
+# the password when you use the `wipe` command or you're going to have a bad
+# day.
+
+lf t5 wipe -p 51243648

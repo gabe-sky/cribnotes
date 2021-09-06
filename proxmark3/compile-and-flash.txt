@@ -1,0 +1,35 @@
+Nice primer with some history.
+https://forum.dangerousthings.com/t/getting-started-with-the-proxmark3-easy/9050
+
+https://github.com/RfidResearchGroup/proxmark3
+  Linux set-up: https://github.com/RfidResearchGroup/proxmark3/blob/master/doc/md/Installation_Instructions/Linux-Installation-Instructions.md
+
+Installing on kali/debian -- should work elsewhere
+
+# Get the source
+  git clone https://github.com/RfidResearchGroup/proxmark3.git
+  cd proxmark3
+
+# Just in case you're starting over
+make clean
+
+# If you don't have a "real" proxmark3, you need to compile for a "generic" one
+# You'll know you've got the wrong one, if you get all the way through this,
+# start pm3, and when you do `hw status` it tells you there is a "fw mismatch."
+# If you have a "real" one, leave out the PLATFORM=PM3GENERIC from these.
+make PLATFORM=PM3GENERIC all
+sudo make PLATFORM=PM3GENERIC install
+pm3-flash-all
+
+
+# Start talking to the li'l guy
+pm3
+
+# How're we feeling today?
+hw status
+
+# If you see an error about a "fw mismatch," go back to the `make clean` step
+# and this time specify or omit the PLATFORM= value when running `make`.
+
+# Run a Lua script that finished initializing the thing.
+script run init_rdv4

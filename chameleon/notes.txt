@@ -7,3 +7,4 @@ Control-a d   # detatch the screen session (which leaves it still active)
 screen -r   # to reattach
 
 Great, I'm going to need a real terminal emulator, aren't I?
+

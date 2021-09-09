@@ -12,6 +12,26 @@ sudo apt-get install rtl-sdr
 rtl_test -t
 
 Looking over this quick-start guide for the rtl-sdr: https://ranous.files.wordpress.com/2018/02/rtl-sdr4linux_quickstartv2-18.pdf
+Okay well that was a little dated
+
+Hmm, here's another one, which seems to be even older
+https://ranous.files.wordpress.com/2016/03/rtl-sdr4linux_quickstartv10-16.pdf 
+
+
+Seriously who the fuck formats their dates as month and year!?
 
 Go get Gqrx: https://gqrx.dk/download
 Never mind.  `sudo apt-get gqrx-sdr`
+
+Do something for teh one who shall not be named.  I obviously have no idea what this does' and the man page is pretty useless
+volk_profile
+
+# woo let's find some air-o-planes
+git clone git://github.com/antirez/dump1090  # lots of forks btw
+cd dump1090
+sudo apt-get install librtlsdr-dev
+make
+
+./dump1090 --interactive --net --enable-agc
+
+It is becoming obvious tgat I know very little about what I'm trying to do.  Physics is a harsh taskmistress.  I mean honestly, you need an antenna that is tuned to the right wavelength, but then physics doesn't care if you coil the thing up.  How is that any brand of sensical?

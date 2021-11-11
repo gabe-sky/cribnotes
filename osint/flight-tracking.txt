@@ -1,0 +1,33 @@
+Aircraft registration prefixes:
+  https://en.wikipedia.org/wiki/List_of_aircraft_registration_prefixes
+Aircraft type designators (ICAO)
+  https://en.wikipedia.org/wiki/List_of_aircraft_type_designators
+Hex code (ICAO) country allocations
+  https://atdb.aero/html/ICAO_hex_decode.html
+Reserved Squawk Codes
+  https://www.flightradars.eu/squawkcodes.html
+
+Flight Radar 24:
+  https://www.flightradar24.com
+Radar Box:
+  https://www.radarbox.com
+ADS-B Exchange:
+  https://globe.adsbexchange.com/
+Icarus Flights:
+  https://icarus.flights/
+
+Live Air Traffic Control
+  https://www.liveatc.net/search/?icao=KAUS
+
+UK Civil Aviation Authority (G-)
+  https://siteapps.caa.co.uk/g-info/
+Federal Aviation Administration (N-)
+  https://registry.faa.gov/aircraftinquiry/Search/NNumberInquiry
+Canadian Civil Aircraft Register (C-)
+  https://wwwapps.tc.gc.ca/saf-sec-sur/2/ccarcs-riacc/RchSimp.aspx
+
+Open Corporates
+  https://opencorporates.com
+
+Photos
+  https://www.airliners.net/

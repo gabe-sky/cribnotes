@@ -3,8 +3,14 @@
 Schlage IBF iButton
   (Low frequency)
 
-HID iClass SE  (High-frequency) (Picopass)
+HID iClass SE  (13.56 MHz High-frequency) (Assa Abloy)
+	PicoPass 2KS system
+	  ISO 15693-2 (Fast mode) or ISO 14443 B
+	  Fuse to go from read/write "Personalization mode" to read-only Application mode.
+First half of the master key: 808200F008
 
+
+Schlage 9691T dual RFID
 
 https://github.com/Proxmark/proxmark3
 And tons of useful documents in here: http://www.proxmark.org/files/

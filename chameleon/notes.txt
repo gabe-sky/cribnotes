@@ -8,3 +8,5 @@ screen -r   # to reattach
 
 Great, I'm going to need a real terminal emulator, aren't I?
 
+--
+CTManager on iOS seems to work alright

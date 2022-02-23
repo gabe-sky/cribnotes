@@ -1,0 +1,20 @@
+# Load a BMP into my "model 6" 200x200 epaper tile
+hf waveshare loadbmp -m 6 IMG_1749
+
+
+# Converting from color to halftone
+GIMP
+
+Colors > Hue-Saturation
+  Set saturation all the way to zero
+
+Filters > Distorts > Newsprint
+
+Set the shape to diamond and radius way down
+
+
+# Notes
+
+Aparently can't deal with complex images, even though everything I've sent to it is the same
+number of bytes.  If it comes out with the last image that was sent to it, that means that you
+need to futz with the image to make it simpler.  No fricken idea what's going on with that.

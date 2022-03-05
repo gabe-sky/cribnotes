@@ -1,5 +1,5 @@
 # Load a BMP into my "model 6" 200x200 epaper tile
-hf waveshare loadbmp -m 6 IMG_1793
+hf waveshare loadbmp -m 6 -f IMG_1793
 
 
 # Convert from HEIC to bmp

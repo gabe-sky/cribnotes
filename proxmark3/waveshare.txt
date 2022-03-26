@@ -1,10 +1,8 @@
+# Convert from HEIC to bmp
+mogrify -format bmp -f IMG_1793.HEIC
+
 # Load a BMP into my "model 6" 200x200 epaper tile
 hf waveshare loadbmp -m 6 IMG_1793
-
-
-# Convert from HEIC to bmp
-mogrify -format bmp IMG_1793.HEIC
-
 
 # Converting from color to halftone in GIMP
 

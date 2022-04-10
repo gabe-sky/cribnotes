@@ -1,0 +1,9 @@
+# Install software
+
+sudo apt-get install hackrf
+
+
+# Flash the little bundle of joy
+
+https://github.com/greatscottgadgets/hackrf/releases/tag/v2021.03.1
+hackrf_spiflash -w /tmp/hackrf-2021.03.1/firmware-bin/hackrf_one_usb.bin

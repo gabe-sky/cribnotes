@@ -23,7 +23,7 @@ For signal, smaller negative numbers are better, bigger than -65 is bad.
 
 ## Snoop only initialization vectors, from all channels, but only associated devices
 
-  airodump-ng -t WPA2 -i -a -w <file prefix> wlan0mon
+  airodump-ng -t WPA2 -i -a --berlin 30 -n 10 -w <file prefix> wlan0mon
 
 ## Deauth a connected client (to try to see it re-initialize) on the secondary wifi
 

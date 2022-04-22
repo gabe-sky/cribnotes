@@ -2,22 +2,25 @@ Mifare Classic 1K
 
 
 # Helpful but dated and old format of commands
+
 https://www.gavinjl.me/proxmark-3-cloning-a-mifare-classic-1k/
 
-# Check that it's the right card
+
+# Check that it's actually MIFARE Classic 1K.  Note the UID.
+
 hf search
 
 
+# Dump the keys and data.
 
-UID 4D 4A 32 B1
-
-
-# Dump the keys and data all at once
 hf mf autopwn
 
-# Restore ... kind of
-hf mf restore --1k --uid 4D4A32B1 --kfn hf-mf-4D4A32B1-key.bin
 
+# Set the same UID on your magic card
 
-# Set the UID
 hf mf csetuid --uid 4D4A32B1
+
+
+# Restore from the autopwn dump file for this UID
+
+hf mf restore --1k --uid 4D4A32B1

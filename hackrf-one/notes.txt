@@ -7,3 +7,9 @@ sudo apt-get install hackrf
 
 https://github.com/greatscottgadgets/hackrf/releases/tag/v2021.03.1
 hackrf_spiflash -w /tmp/hackrf-2021.03.1/firmware-bin/hackrf_one_usb.bin
+
+
+# Videos, because apparently no one does text anymore
+
+https://greatscottgadgets.com/sdr/1/
+

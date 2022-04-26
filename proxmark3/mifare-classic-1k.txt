@@ -24,3 +24,7 @@ hf mf csetuid --uid 4D4A32B1
 # Restore from the autopwn dump file for this UID
 
 hf mf restore --1k --uid 4D4A32B1
+
+# Screw it let's start over
+
+hf mf cwipe

@@ -1,6 +1,6 @@
 # Install software
 
-sudo apt-get install hackrf
+sudo apt-get install hackrf gnuradio
 
 
 # Flash the little bundle of joy
@@ -12,4 +12,4 @@ hackrf_spiflash -w /tmp/hackrf-2021.03.1/firmware-bin/hackrf_one_usb.bin
 # Videos, because apparently no one does text anymore
 
 https://greatscottgadgets.com/sdr/1/
-
+https://www.youtube.com/watch?v=ufxBX_uNCa0

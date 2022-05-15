@@ -1,4 +1,4 @@
-# Convert from HEIC to bmp
+# Convert from HEIC to bmp  (`sudo apt-get install imagemagic gimp`)
 mogrify -format bmp IMG_1793.HEIC
 
 # Load a BMP into my "model 6" 200x200 epaper tile

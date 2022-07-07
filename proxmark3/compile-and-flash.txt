@@ -6,9 +6,11 @@ https://github.com/RfidResearchGroup/proxmark3
 
 Installing on kali/debian -- should work elsewhere
 
+sudo apt-get install gcc-arm-none-eabi libnewlib-dev qtbase5-dev libssl-dev
+
 # Get the source
-  git clone https://github.com/RfidResearchGroup/proxmark3.git
-  cd proxmark3
+git clone https://github.com/RfidResearchGroup/proxmark3.git
+cd proxmark3
 
 # Just in case you're starting over
 make clean

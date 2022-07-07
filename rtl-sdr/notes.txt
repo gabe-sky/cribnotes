@@ -11,6 +11,9 @@ sudo apt-get install rtl-sdr
 # did it workk?  (ignore the E4000 thing)
 rtl_test -t
 
+# Listen to FM station 96.3
+rtl_fm -f 96.3e6 -s 200000 -r 48000 - | aplay -r 48000 -f S16_LE
+
 Looking over this quick-start guide for the rtl-sdr: https://ranous.files.wordpress.com/2018/02/rtl-sdr4linux_quickstartv2-18.pdf
 Okay well that was a little dated
 

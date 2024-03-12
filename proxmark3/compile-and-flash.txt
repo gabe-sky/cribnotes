@@ -23,7 +23,8 @@ make PLATFORM=PM3GENERIC all
 sudo make PLATFORM=PM3GENERIC install
 pm3-flash-all
 
-# You may not have permission to use the USB port.
+# You may not have permission to use the USB port.  On Debian, add yourself
+# to the dialout group.
 
 # Start talking to the li'l guy
 pm3

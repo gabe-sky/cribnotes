@@ -6,7 +6,7 @@ https://github.com/RfidResearchGroup/proxmark3
 
 Installing on kali/debian -- should work elsewhere
 
-sudo apt-get install gcc-arm-none-eabi libnewlib-dev qtbase5-dev libssl-dev make gcc libbz2-dev libreadline-dev g++
+sudo apt-get install gcc-arm-none-eabi libnewlib-dev qtbase5-dev libssl-dev make gcc libbz2-dev libreadline-dev g++ liblz4-dev
 
 # Get the source
 git clone https://github.com/RfidResearchGroup/proxmark3.git
@@ -23,6 +23,7 @@ make PLATFORM=PM3GENERIC all
 sudo make PLATFORM=PM3GENERIC install
 pm3-flash-all
 
+# You may not have permission to use the USB port.
 
 # Start talking to the li'l guy
 pm3

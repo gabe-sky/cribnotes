@@ -31,4 +31,4 @@ https://rogue-master.net/
 
 # Oh so many files
 
-https://github.com/UberGuidoZ/Flipper
+git clone --depth 1 git@github.com:UberGuidoZ/Flipper.git

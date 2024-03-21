@@ -1,0 +1,34 @@
+
+
+# Starting over
+
+Make a backup copy of the SD card.  Then unmount and insert in the flipper.  Format it.  https://docs.flipper.net/basics/sd-card#UB7HF
+
+* Settings
+* Storage
+* Format SD Card
+* Format
+
+Update the firmware in qFlipper or other tool of your choice.  This will recreate the databases with the stock ones.  https://docs.flipper.net/basics/firmware-update
+
+
+# Command line access
+
+On Mac: https://docs.flipper.net/development/cli#rnDLl
+
+screen /dev/cu.usbmodemflip_snuggles1
+
+ctrl-a, k to get out
+
+
+# Replace the firmware with something nice and hacky.
+
+https://github.com/DarkFlippers/unleashed-firmware/releases
+https://rogue-master.net/
+
+
+
+
+# Oh so many files
+
+https://github.com/UberGuidoZ/Flipper

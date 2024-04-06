@@ -1,0 +1,7 @@
+# What can `iw` see?
+
+sudo iw dev
+
+# Tell NetworkManager to knock off its shenanigans
+
+sudo nmcli dev set wlx9cefd5fee089 managed no
